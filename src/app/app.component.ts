@@ -1,15 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { MenuTitleComponent } from './components/menu-title/menu-title.component';
+import { RouterModule } from '@angular/router';
+import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'], 
-  standalone: true,
-  imports: [RouterOutlet, MenuTitleComponent]
+  styleUrls: ['./app.component.css'],
+  imports: [RouterModule, MenuBarComponent],
 })
-export class AppComponent {
-  title = 'app-blog';
-}
-
+export class AppComponent {}

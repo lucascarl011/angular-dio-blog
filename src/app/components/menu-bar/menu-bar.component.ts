@@ -1,11 +1,18 @@
-import { Component } from '@angular/core';
+
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu-bar',
-  imports: [],
   templateUrl: './menu-bar.component.html',
-  styleUrl: './menu-bar.component.css'
+  styleUrls: ['./menu-bar.component.css'],
+  standalone: true
 })
-export class MenuBarComponent {
+export class MenuBarComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit(): void {
+  }
 
 }
+
